@@ -305,3 +305,282 @@ footer h4 { color: #fff; margin-bottom: 1.5rem; }
   color: #f5c96b;
   letter-spacing: 3.5px;
 }
+/* =========================================
+   FINAL MOBILE POLISH FIX
+   About + Feature Strip + Footer
+   ========================================= */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box;
+  }
+
+  /* Feature strip after hero */
+  .fstrip {
+    padding: 1.5rem 0 !important;
+    overflow: hidden;
+  }
+
+  .fstrip-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    width: 100%;
+  }
+
+  .fstrip-item {
+    width: 100% !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+    padding: 1.1rem !important;
+    border-radius: 20px !important;
+    box-sizing: border-box;
+    text-align: left !important;
+  }
+
+  .fsi-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+  }
+
+  .fsi-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .fsi-text strong {
+    display: block !important;
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .fsi-text small {
+    display: block !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    overflow-wrap: break-word;
+  }
+
+  /* About section */
+  .about {
+    overflow: hidden;
+  }
+
+  .about-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    width: 100%;
+  }
+
+  .about-img-col,
+  .about-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-text h2,
+  .about-text p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .about-pillars {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .pillar {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    padding: 1.1rem !important;
+    box-sizing: border-box;
+    text-align: left !important;
+  }
+
+  .pillar-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .pillar-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .pillar-text strong {
+    display: block !important;
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .pillar-text small {
+    display: block !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    overflow-wrap: break-word;
+  }
+
+  .about-stats-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .about-stats-row > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.2rem !important;
+    border-radius: 20px !important;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  .stat-val {
+    font-size: 2.4rem !important;
+    line-height: 1 !important;
+    margin-bottom: 0.35rem;
+  }
+
+  .stat-lbl {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Footer */
+  footer {
+    overflow: hidden;
+  }
+
+  .footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2.2rem !important;
+    text-align: left;
+  }
+
+  .footer-grid > div,
+  .footer-brand {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .f-nav,
+  .f-contact-list {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .f-contact-list li {
+    display: grid !important;
+    grid-template-columns: 24px 1fr !important;
+    gap: 0.75rem !important;
+    align-items: flex-start !important;
+    line-height: 1.55 !important;
+  }
+
+  .f-contact-list span,
+  .f-contact-list a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .footer-grid .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box;
+  }
+
+  .footer-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    text-align: center !important;
+    padding: 1.5rem 0 5rem !important;
+  }
+
+  .developer-credit {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .developer-link {
+    display: inline-block;
+    font-size: 0.64rem !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.6 !important;
+    text-align: center;
+  }
+
+  .wa-float {
+    width: 56px !important;
+    height: 56px !important;
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .fstrip-item,
+  .pillar {
+    padding: 1rem !important;
+  }
+
+  .fsi-icon,
+  .pillar-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  .stat-val {
+    font-size: 2.1rem !important;
+  }
+
+  .developer-link {
+    font-size: 0.6rem !important;
+    letter-spacing: 1.6px !important;
+  }
+}
