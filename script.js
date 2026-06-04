@@ -1,14 +1,18 @@
-// 1. Preloader
+// 1. Premium Preloader
 window.addEventListener('load', () => {
-    document.body.classList.remove('loading');
-
     const preloader = document.getElementById('sitePreloader');
-    if (preloader) {
-        preloader.classList.add('hide');
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 800);
-    }
+
+    setTimeout(() => {
+        document.body.classList.remove('loading');
+
+        if (preloader) {
+            preloader.classList.add('hide');
+
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 800);
+        }
+    }, 900);
 });
 
 // 2. Sticky Navbar
@@ -155,4 +159,4 @@ function submitBooking(e) {
         'https://wa.me/971502591946?text=' + encodeURIComponent(text),
         '_blank'
     );
-}
+} 
