@@ -301,6 +301,9 @@ footer h4 { color: #fff; margin-bottom: 1.5rem; }
 .social-links a { width: 40px; height: 40px; border-radius: 12px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; color: #fff; transition: var(--t); }
 .social-links a:hover { background: var(--rose); transform: translateY(-3px); }
 .footer-bottom { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; font-size: .85rem; }
+.footer-sub { padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.07); text-align: center; font-size: .72rem; color: rgba(255,255,255,.3); }
+.afaq-link { color: rgba(255,255,255,.42); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; transition: color .3s ease; }
+.afaq-link:hover { color: var(--rose); }
 
 .wa-float { position: fixed; bottom: 2rem; right: 2rem; width: 60px; height: 60px; background: var(--green-wa); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; z-index: 1000; box-shadow: 0 10px 30px rgba(37,211,102,.4); transition: var(--t); animation: pulseRing 3s infinite; }
 .wa-float:hover { transform: translateY(-5px); }
@@ -579,8 +582,10 @@ footer h4 { color: #fff; margin-bottom: 1.5rem; }
     flex-direction: column !important;
     gap: 0.75rem !important;
     text-align: center !important;
-    padding: 1.5rem 0 5rem !important;
+    padding: 1.5rem 0 !important;
   }
+
+  .footer-sub { padding-bottom: 5rem !important; text-align: center !important; }
 
   .developer-credit {
     width: 100%;
