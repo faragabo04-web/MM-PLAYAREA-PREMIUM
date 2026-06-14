@@ -46,6 +46,7 @@ body { font-family: var(--ff-body); color: var(--body-text); background: var(--c
 body.loading { overflow: hidden; }
 
 img { max-width: 100%; height: auto; display: block; }
+picture { display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
@@ -133,7 +134,7 @@ p { color: var(--muted); line-height: 1.8; font-size: 1rem; }
 /* =========================================
    5. PREMIUM HERO
    ========================================= */
-.premium-hero { position: relative; min-height: 90vh; display: flex; align-items: center; background: url('assets/images/venue-hero.png') center/cover no-repeat; overflow: hidden; padding-top: 80px; }
+.premium-hero { position: relative; min-height: 90vh; display: flex; align-items: center; background: url('assets/images/venue-hero.png') center/cover no-repeat; background-image: -webkit-image-set(url('assets/images/venue-hero.webp') 1x, url('assets/images/venue-hero.png') 1x); background-image: image-set(url('assets/images/venue-hero.webp') type('image/webp'), url('assets/images/venue-hero.png') type('image/png')); overflow: hidden; padding-top: 80px; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.4) 100%); z-index: 1; }
 .hero-content { position: relative; z-index: 10; max-width: 800px; color: var(--white); }
 .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.1); padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; color: var(--amber); margin-bottom: 20px; backdrop-filter: blur(5px); }
@@ -207,6 +208,7 @@ p { color: var(--muted); line-height: 1.8; font-size: 1rem; }
 .act-card:hover { transform: translateY(-8px); box-shadow: var(--sh-md); }
 .act-visual { position: relative; height: 220px; }
 .act-visual img { width: 100%; height: 100%; object-fit: cover; }
+.act-visual picture { height: 100%; }
 .act-emoji { position: absolute; top: 1rem; left: 1rem; width: 48px; height: 48px; border-radius: 14px; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: var(--sh-sm); }
 .act-body { padding: 1.75rem; }
 .act-tag { display: inline-block; font-size: .72rem; font-weight: 700; padding: .24rem .78rem; border-radius: 999px; margin-bottom: .8rem; }
@@ -238,6 +240,7 @@ p { color: var(--muted); line-height: 1.8; font-size: 1rem; }
 .gallery-masonry { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
 .g-tile { position: relative; border-radius: var(--r-lg); overflow: hidden; cursor: pointer; aspect-ratio: 4/3; box-shadow: var(--sh-sm); transition: var(--t); }
 .g-tile img, .g-tile video { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.g-tile picture { height: 100%; }
 .g-tile:hover img, .g-tile:hover video { transform: scale(1.1); }
 .g-tile-ov { position: absolute; inset: 0; background: rgba(15, 23, 42, 0.5); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; opacity: 0; transition: var(--t); }
 .g-tile:hover .g-tile-ov { opacity: 1; }
